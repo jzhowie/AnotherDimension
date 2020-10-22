@@ -9,5 +9,7 @@ public static void main(String[] args) {
 	System.out.println(ArrayOps.largest(A));
 	System.out.println(Arrays.toString(ArrayOps.sumRows(B)));
 	System.out.println(Arrays.toString(ArrayOps.sumRows(C)));
+	System.out.println(Arrays.toString(ArrayOps.largestInRows(B)));
+	System.out.println(Arrays.toString(ArrayOps.largestInRows(C)));
 }
 }
