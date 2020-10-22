@@ -1,11 +1,12 @@
 public class ArrayOps {
-public static int[] sumRows(int[][] matrix) {
+public static int[] largestInRows(int[][] matrix) {
 	int newarr[] = new int[matrix.length];
 	for (int row = 0; row < matrix.length; row++) {
 		newarr[row] = largest(matrix[row]);
 	}
 	return newarr;
 }
+
 
 public static int sum(int[] arr) {
 	int sum = 0;
