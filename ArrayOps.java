@@ -8,6 +8,15 @@ public static int[][] invertArray(int[][] matrix) {
 	}
 	return newarr;
 }
+
+public static boolean isRowMagic(int[][] matrix) {
+	int sums[] = sumRows(matrix);
+	for (int ind = 0; ind < sums.length; ind++) {
+		if (sums[0] != sums[ind]) return false;
+	}
+	return true;
+}
+
 public static int[] sumCols(int[][] matrix) {
 	return sumRows(invertArray(matrix));
 }
