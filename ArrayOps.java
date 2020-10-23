@@ -17,6 +17,10 @@ public static boolean isRowMagic(int[][] matrix) {
 	return true;
 }
 
+public static boolean isColMagic(int[][] matrix) {
+	return isRowMagic(invertArray(matrix));
+}
+
 public static int[] sumCols(int[][] matrix) {
 	return sumRows(invertArray(matrix));
 }
