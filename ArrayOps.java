@@ -1,4 +1,17 @@
 public class ArrayOps {
+public static int[][] invertArray(int[][] matrix) {
+	int newarr[][] = new int[matrix[0].length][matrix.length];
+	for (int row = 0; row < matrix.length; row++) {
+		for (int col = 0; col < matrix[row].length; col++) {
+			newarr[col][row] = matrix[row][col];
+		}
+	}
+	return newarr;
+}
+public static int[] sumCols(int[][] matrix) {
+	return sumRows(invertArray(matrix));
+}
+
 public static int sum(int[][] arr) {
 	return sum(sumRows(arr));
 }
