@@ -8,6 +8,7 @@ public static void main(String[] args) {
 	int[][] D = { {10}, {10}, {10} };
 	int[][] E = { {10, 30, 20, 40}, {10, 40, 20, 30}, {10, 50, 20, 20} };
 	int[][] F = { {1, -97, 20, 40}, {1, -6, 15, -40}, {-5, 100, -38, -3} };
+	int[][] G = { {2, 4, 2}, {2, 2, 2} };
 	int[][] TestCaseA = { {1, 0, 12, -1}, {7, -2, 2, 1}, {-5, -2, 2, -9} };
 	int[] TestCaseB = {1, 3, 5};
 /*
@@ -46,5 +47,9 @@ public static void main(String[] args) {
 	System.out.println(ArrayOps.isColMagic(D));
 	System.out.println(ArrayOps.isColMagic(E));
 	System.out.println(ArrayOps.isColMagic(F));
+
+	System.out.println("Sum of specific sum and col the same?");
+	System.out.println(ArrayOps.isLocationMagic(G, 0, 1));
+	System.out.println(ArrayOps.isLocationMagic(G, 1, 1));
 }
 }
