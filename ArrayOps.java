@@ -9,6 +9,11 @@ public static int[][] invertArray(int[][] matrix) {
 	return newarr;
 }
 
+public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+	int newarr[][] = invertArray(matrix);
+	return sum(matrix[row]) == sum(newarr[col]);
+}
+
 public static boolean isRowMagic(int[][] matrix) {
 	int sums[] = sumRows(matrix);
 	for (int ind = 0; ind < sums.length; ind++) {
