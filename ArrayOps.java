@@ -1,4 +1,8 @@
 public class ArrayOps {
+public static int sum(int[][] arr) {
+	return sum(sumRows(arr));
+}
+
 public static int[] largestInRows(int[][] matrix) {
 	int newarr[] = new int[matrix.length];
 	for (int row = 0; row < matrix.length; row++) {
